@@ -10,4 +10,4 @@ const client = new AkairoClient({
     commandDirectory: path.resolve('commands')
 }, { disableEveryone: true });
 
-client.login(token);
+client.login(process.env.DISCORD_TOKEN);
