@@ -1,6 +1,7 @@
 require('dotenv').config();
 const { AkairoClient } = require('discord-akairo');
 const { prefix, token } = require('./config.json');
+const commandlist = require('./storage/commands.json');
 
 const path = require('path');
 
