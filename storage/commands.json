@@ -1,0 +1,27 @@
+{ "commandlist" : [ {
+    "help": {
+        "aliases": "help, command, list",
+        "description": "Ruft die Hilfe auf.",
+        "params": "Befehl (optional)",
+        "example": "!help name"
+    }, 
+    "name": {
+        "aliases": "none",
+        "description": "Generiert einen zufälligen Namen bestehen aus Vor-, Zweit- und Nachnamen.",
+        "params": "Geschlecht, Nachname (optional)",
+        "example": "!name female Ashwood"
+    },    
+    "pun": {
+        "aliases": "none",
+        "description": "Gibt einen Wortwitz aus.",
+        "params": "none",
+        "example": "!pun"
+    }, 
+    "weather": {
+        "aliases": "none",
+        "description": "Gibt einen Wortwitz aus.",
+        "params": "Stadt",
+        "example": "!weather Hamburg"
+    }
+} ]
+}

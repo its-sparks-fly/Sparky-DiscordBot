@@ -17,13 +17,14 @@ class WeatherCommand extends Command {
         if (!args.city) {
             return message.channel.send(`${message.author} Bitte gib eine Stadt ein!`);
         }
-        let city = utf8.encode(args.city);
+        let stadt = args.city;
+        let city = utf8.encode(stadt);
         let apiKey = process.env.WEATHER_API_KEY;
 
         try {
             let response = await axios('http://api.openweathermap.org/data/2.5/weather', {
                 params: {
-                    q: city,
+                    q: stadt,
                     appid: apiKey,
                     units: 'metric'
                 }
