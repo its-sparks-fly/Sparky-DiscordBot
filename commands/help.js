@@ -1,4 +1,6 @@
 const { Command } = require('discord-akairo');
+const path = require('path');
+const commandlist = require(path.join(__dirname, '..', 'storage', 'commands.json'));
 
 class HelpCommand extends Command {
     constructor() {
